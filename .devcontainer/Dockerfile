@@ -3,6 +3,9 @@ FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 # Set timezone
 ENV TZ=UTC
 
+# Disable tracking
+ENV DO_NOT_TRACK=true
+
 # Set up work directory
 WORKDIR /workspace
 
